@@ -1,0 +1,349 @@
+<html>
+    <head>
+        <style>
+        .heading{
+    margin: 5% 5% 4% 5%;
+    border-radius: 20px;
+    border-color: aqua;
+    padding: 1% 0;
+    background-color: bisque;
+    color: black;
+    width: 90%;
+}
+h1,h2{
+    text-align: center;
+}
+p{
+    display: none;
+}
+.dd1{
+     margin: 0% 2% 4% 11%;
+    border-radius: 20px;
+    padding: 1% 0;
+    background-color: bisque;
+    color: black;
+    float: left;
+    width: 24%;
+}
+.dd2{
+    margin: 0% 2% 4% 0%;
+    border-radius: 20px;
+    padding: 1% 0;
+    background-color: bisque;
+    color: black;
+    float: left;
+     width: 26%;
+}
+.dd3{
+    margin: 0% 11% 4% 0%;
+    border-radius: 20px;
+    padding: 1% 0;
+    background-color: bisque;
+    color: black;
+    float: left;
+     width: 24%;
+}
+.dd4{
+     margin: 0%  2% 2% 20%;
+    border-radius: 20px;
+    padding: 1% 0;
+    background-color: bisque;
+    color: black;
+    width: 29%;
+    clear: both;
+    float: left;
+}
+.dd5{
+     margin:0% 20% 2% 0% ;
+    border-radius: 20px;
+    padding: 1% 0;
+    background-color: bisque;
+    color: black;
+    width: 29%;
+    float: left;
+}
+        </style>
+    </head>
+<body>
+    <!--big div covered body and have 5 divs class is body -->
+    <div class="body" id="div">
+        <!--this div has title its class is heading -->
+        <div class="heading" id="dt">
+        <h1>5 Phases of Hacking</h1>
+        </div>
+        <!--this div has first defenation its class is dd1 -->
+       <div class="dd1" id="dt1" >
+        <h2>Maintaining Access </h2>
+        </div>
+        <p id="p1" >
+        Once a hacker has gained access, they want to keep that access for future exploitation and attacks. Once the hacker owns the system, they can use it as a base to launch additional attacks.
+In this case, the owned system is sometimes referred to as a zombie system.Now that the hacker has multiple e-mail accounts, the hacker begins to test the accounts on the domain.  The hacker from this point creates a new administrator account for themselves based on the naming structure and try and blend in.  As a precaution, the hacker begins to look for and identify accounts that have not been used for a long time.  The hacker assumes that these accounts are likely either forgotten or not used so they change the password and elevate privileges to an administrator as a secondary account in order to maintain access to the network.  The hacker may also send out emails to other users with an exploited file such as a PDF with a reverse shell in order to extend their possible access.  No overt exploitation or attacks will occur at this time.  If there is no evidence of detection, a waiting game is played letting the victim think that nothing was disturbed.  With access to an IT account the hacker begins to make copies of all emails, appointments, contacts, instant messages, and files to be sorted through and used later.
+        </p>
+         <!--this div has 2th defenation its class is dd2 -->
+       <div class="dd2" id="dt2" >
+        <h2>Reconnaissance</h2>
+        </div>
+        <p id="p2">
+        This is the first phase where the Hacker tries to collect information about the target. It may include Identifying the Target, finding out the target’s IP Address Range, Network, DNS records, etc.Let’s assume that an attacker is about to hack a websites’ contacts.
+He may do so by : using a search engine like maltego, researching the target say a website (checking links, jobs, job titles, email, news, etc.), or a tool like HTTPTrack to download the entire website for later enumeration, the hacker is able to determine the following:  Staff names, positions, and email addresses.
+        </p>
+         <!--this div has 3th defenation its class is dd3 -->
+       <div class="dd3" id="dt3" >
+        <h2>  Gaining Access</h2>
+        </div>
+        <p id="p3">
+        In this phase, hacker designs the blueprint of the network of the target with the help of data collected during Phase 1 and Phase 2. The hacker has finished enumerating and scanning the network and now decide that they have a some options to gain access to the network.
+For example, say hacker chooses Phishing Attack: The hacker decides to play it safe and use a simple phishing attack to gain access.  The hacker decides to infiltrate from the IT department.  They see that there have been some recent hires and they are likely not up to speed on the procedures yet.  A phishing email will be sent using the CTO’s actual email address using a program and sent out to the techs.  The email contains a phishing website that will collect their login and passwords.  Using any number of options (phone app, website email spoofing, Zmail, etc) the hacker sends a email asking the users to login to a new Google portal with their credentials.  They already have the Social Engineering Toolkit running and have sent an email with the server address to the users masking it with a bitly or tinyurl.
+Other options include creating a reverse TCP/IP shell in a PDF using Metasploit ( may be caught by spam filter).  Looking at the event calendar they can set up a Evil Twin router and try to Man in the Middle attack users to gain access.  An variant of Denial of Service attack, stack based buffer overflows, and session hijacking may also prove to be great.
+        </p>
+         <!--this div has 4th defenation its class is dd4 -->
+       <div class="dd4" id="dt4" >
+        <h2>Clearing Tracks</h2>
+        </div>
+        <p id="p4">
+        Prior to the attack, the attacker would change their MAC address and run the attacking machine through at least one VPN to help cover their identity.  They will not deliver a direct attack or any scanning technique that would be deemed “noisy”.
+Once access is gained and privileges have been escalated, the hacker seek to cover their tracks.  This includes clearing out Sent emails, clearing server logs, temp files, etc.  The hacker will also look for indications of the email provider alerting the user or possible unauthorized logins under their account.
+        </p>
+         <!--this div has 5th defenation its class is dd5 -->
+       <div class="dd5" id="dt5" >
+        <h2>Scanning  </h2>
+        </div>
+        <p id="p5">
+        This phase includes usage of tools like dialers, port scanners, network mappers, sweepers, and vulnerability scanners to scan data. Hackers are now probably seeking any information that can help them perpetrate attack such as computer names, IP addresses, and user accounts.Now that the hacker has some basic information, the hacker now moves to the next phase and begins to test the network for other avenues of attacks. The hacker decides to use a couple methods for this end to help map the network (i.e. Kali Linux, Maltego and find an email to contact to see what email server is being used).  The hacker looks for an automated email if possible or based on the information gathered he may decide to email HR with an inquiry about a job posting.
+        </p>
+    </div>
+<script>
+    function col1(){
+        document.getElementById("p1").style.display= "block";
+        document.getElementById("p1").style.width= "60%";
+        document.getElementById("p1").style.borderRadius= "10px";
+        document.getElementById("p1").style.fontSize = "30px";
+        document.getElementById("p1").style.backgroundColor= "burlywood";
+        document.getElementById("p1").style.color= "firebrick";
+        document.getElementById("p1").style.padding= "1%";
+        document.getElementById("p1").style.margin= "0% 20% 2% 20%";
+        document.getElementById("dt1").style.margin= "0% 38% 2% 38%";
+        document.getElementById("dt1").style.width= "24%";
+        document.getElementById("dt").style.display= "none";
+        document.getElementById("dt2").style.display= "none";
+        document.getElementById("dt3").style.display= "none";
+        document.getElementById("dt4").style.display= "none";
+        document.getElementById("dt5").style.display= "none";
+    }
+    function col2(){
+        document.getElementById("p2").style.display= "block";
+        document.getElementById("p2").style.width= "60%";
+        document.getElementById("p2").style.borderRadius= "10px";
+        document.getElementById("p2").style.fontSize = "30px";
+        document.getElementById("p2").style.backgroundColor= "burlywood";
+        document.getElementById("p2").style.color= "firebrick";
+        document.getElementById("p2").style.padding= "1%";
+        document.getElementById("p2").style.margin= "0% 20% 2% 20%";
+        document.getElementById("dt2").style.margin= "0% 38% 2% 38%";
+        document.getElementById("dt2").style.width= "24%";
+        document.getElementById("dt").style.display= "none";
+        document.getElementById("dt1").style.display= "none";
+        document.getElementById("dt3").style.display= "none";
+        document.getElementById("dt4").style.display= "none";
+        document.getElementById("dt5").style.display= "none";
+    }
+    function col3(){
+        document.getElementById("p3").style.display= "block";
+        document.getElementById("p3").style.width= "60%";
+        document.getElementById("p3").style.borderRadius= "10px";
+        document.getElementById("p3").style.fontSize = "30px";
+        document.getElementById("p3").style.backgroundColor= "burlywood";
+        document.getElementById("p3").style.color= "firebrick";
+        document.getElementById("p3").style.padding= "1%";
+        document.getElementById("p3").style.margin= "0% 20% 2% 20%";
+        document.getElementById("dt3").style.margin= "0% 38% 2% 38%";
+        document.getElementById("dt3").style.width= "24%";
+        document.getElementById("dt").style.display= "none";
+        document.getElementById("dt2").style.display= "none";
+        document.getElementById("dt1").style.display= "none";
+        document.getElementById("dt4").style.display= "none";
+        document.getElementById("dt5").style.display= "none";
+    }
+    function col4(){
+        document.getElementById("p4").style.display= "block";
+        document.getElementById("p4").style.width= "60%";
+        document.getElementById("p4").style.borderRadius= "10px";
+        document.getElementById("p4").style.fontSize = "30px";
+        document.getElementById("p4").style.backgroundColor= "burlywood";
+        document.getElementById("p4").style.color= "firebrick";
+        document.getElementById("p4").style.padding= "1%";
+        document.getElementById("p4").style.margin= "0% 20% 2% 20%";
+        document.getElementById("dt4").style.margin= "0% 38% 2% 38%";
+        document.getElementById("dt4").style.width= "24%";
+        document.getElementById("dt").style.display= "none";
+        document.getElementById("dt2").style.display= "none";
+        document.getElementById("dt3").style.display= "none";
+        document.getElementById("dt1").style.display= "none";
+        document.getElementById("dt5").style.display= "none";
+    }
+    function col5(){
+        document.getElementById("p5").style.display= "block";
+        document.getElementById("p5").style.width= "60%";
+        document.getElementById("p5").style.borderRadius= "10px";
+        document.getElementById("p5").style.fontSize = "30px";
+        document.getElementById("p5").style.backgroundColor= "burlywood";
+        document.getElementById("p5").style.color= "firebrick";
+        document.getElementById("p5").style.padding= "1%";
+        document.getElementById("p5").style.margin= "0% 20% 2% 20%";
+        document.getElementById("dt5").style.margin= "0% 38% 2% 38%";
+        document.getElementById("dt5").style.width= "24%";
+        document.getElementById("dt").style.display= "none";
+        document.getElementById("dt2").style.display= "none";
+        document.getElementById("dt3").style.display= "none";
+        document.getElementById("dt4").style.display= "none";
+        document.getElementById("dt1").style.display= "none";
+    }
+    document.getElementById("dt1").addEventListener("mouseover",col1);
+    document.getElementById("dt2").addEventListener("mouseover",col2);
+    document.getElementById("dt3").addEventListener("mouseover",col3);
+    document.getElementById("dt4").addEventListener("mouseover",col4);
+    document.getElementById("dt5").addEventListener("mouseover",col5);
+    function coll1(){
+        document.getElementById("p1").style.display= "none";
+        document.getElementById("dt").style.margin= " 5% 5% 4% 5%";
+        document.getElementById("dt").style.width= "90%";
+        document.getElementById("dt").style.display= "block";
+        document.getElementById("dt").style.borderRadius= "20px";
+        document.getElementById("dt1").style.margin= " 0% 2% 4% 11%";
+        document.getElementById("dt1").style.width= "24%";
+        document.getElementById("dt1").style.float= "left";
+        document.getElementById("dt2").style.margin= " 0% 2% 4% 0%";
+        document.getElementById("dt2").style.width= "26%";
+        document.getElementById("dt2").style.display= "inline";
+        document.getElementById("dt2").style.float= "left";
+        document.getElementById("dt3").style.margin= " 0% 11% 4% 0%";
+        document.getElementById("dt3").style.width= "24%";
+        document.getElementById("dt3").style.display= "inline";
+        document.getElementById("dt3").style.float= "left";
+        document.getElementById("dt4").style.margin= " 0%  2% 2% 20%";
+        document.getElementById("dt4").style.width= "29%";
+        document.getElementById("dt4").style.clear= "both";
+        document.getElementById("dt4").style.display= "inline";
+        document.getElementById("dt4").style.float= "left";
+        document.getElementById("dt5").style.margin= " 0% 20% 2% 0%";
+        document.getElementById("dt5").style.width= "29%";
+        document.getElementById("dt5").style.display= "inline";
+        document.getElementById("dt5").style.float= "left";
+    }
+    function coll2(){
+        document.getElementById("p2").style.display= "none";
+        document.getElementById("dt").style.margin= " 5% 5% 4% 5%";
+        document.getElementById("dt").style.width= "90%";
+        document.getElementById("dt").style.display= "block";
+        document.getElementById("dt").style.borderRadius= "20px";
+        document.getElementById("dt1").style.margin= " 0% 2% 4% 11%";
+        document.getElementById("dt1").style.width= "24%";
+        document.getElementById("dt1").style.display= "inline";
+        document.getElementById("dt1").style.float= "left";
+        document.getElementById("dt2").style.margin= " 0% 2% 4% 0%";
+        document.getElementById("dt2").style.width= "26%";
+        document.getElementById("dt2").style.display= "inline";
+        document.getElementById("dt2").style.float= "left";
+        document.getElementById("dt3").style.margin= " 0% 11% 4% 0%";
+        document.getElementById("dt3").style.width= "24%";
+        document.getElementById("dt3").style.display= "inline";
+        document.getElementById("dt3").style.float= "left";
+        document.getElementById("dt4").style.margin= " 0%  2% 2% 20%";
+        document.getElementById("dt4").style.width= "29%";
+        document.getElementById("dt4").style.clear= "both";
+        document.getElementById("dt4").style.display= "inline";
+        document.getElementById("dt4").style.float= "left";
+        document.getElementById("dt5").style.margin= " 0% 20% 2% 0%";
+        document.getElementById("dt5").style.width= "29%";
+        document.getElementById("dt5").style.display= "inline";
+        document.getElementById("dt5").style.float= "left";
+    }
+    function coll3(){
+        document.getElementById("p3").style.display= "none";
+        document.getElementById("dt").style.margin= " 5% 5% 4% 5%";
+        document.getElementById("dt").style.width= "90%";
+        document.getElementById("dt").style.display= "block";
+        document.getElementById("dt").style.borderRadius= "20px";
+        document.getElementById("dt1").style.margin= " 0% 2% 4% 11%";
+        document.getElementById("dt1").style.width= "24%";
+        document.getElementById("dt1").style.display= "inline";
+        document.getElementById("dt1").style.float= "left";
+        document.getElementById("dt2").style.margin= " 0% 2% 4% 0%";
+        document.getElementById("dt2").style.width= "26%";
+        document.getElementById("dt2").style.display= "inline";
+        document.getElementById("dt2").style.float= "left";
+        document.getElementById("dt3").style.margin= " 0% 11% 4% 0%";
+        document.getElementById("dt3").style.width= "24%";
+        document.getElementById("dt3").style.float= "left";
+        document.getElementById("dt4").style.margin= " 0%  2% 2% 20%";
+        document.getElementById("dt4").style.width= "29%";
+        document.getElementById("dt4").style.clear= "both";
+        document.getElementById("dt4").style.display= "inline";
+        document.getElementById("dt4").style.float= "left";
+        document.getElementById("dt5").style.margin= " 0% 20% 2% 0%";
+        document.getElementById("dt5").style.width= "29%";
+        document.getElementById("dt5").style.display= "inline";
+        document.getElementById("dt5").style.float= "left";
+    }
+    function coll4(){
+        document.getElementById("p4").style.display= "none";
+        document.getElementById("dt").style.margin= " 5% 5% 4% 5%";
+        document.getElementById("dt").style.width= "90%";
+        document.getElementById("dt").style.display= "block";
+        document.getElementById("dt").style.borderRadius= "20px";
+        document.getElementById("dt1").style.margin= " 0% 2% 4% 11%";
+        document.getElementById("dt1").style.width= "24%";
+        document.getElementById("dt1").style.display= "inline";
+        document.getElementById("dt1").style.float= "left";
+        document.getElementById("dt2").style.margin= " 0% 2% 4% 0%";
+        document.getElementById("dt2").style.width= "26%";
+        document.getElementById("dt2").style.display= "inline";
+        document.getElementById("dt2").style.float= "left";
+        document.getElementById("dt3").style.margin= " 0% 11% 4% 0%";
+        document.getElementById("dt3").style.width= "24%";
+        document.getElementById("dt3").style.display= "inline";
+        document.getElementById("dt3").style.float= "left";
+        document.getElementById("dt4").style.margin= " 0%  2% 2% 20%";
+        document.getElementById("dt4").style.width= "29%";
+        document.getElementById("dt4").style.clear= "both";
+        document.getElementById("dt4").style.float= "left";
+        document.getElementById("dt5").style.margin= " 0% 20% 2% 0%";
+        document.getElementById("dt5").style.width= "29%";
+        document.getElementById("dt5").style.display= "inline";
+        document.getElementById("dt5").style.float= "left";
+    }
+    function coll5(){
+        document.getElementById("p5").style.display= "none";
+        document.getElementById("dt").style.margin= " 5% 5% 4% 5%";
+        document.getElementById("dt").style.width= "90%";
+        document.getElementById("dt").style.display= "block";
+        document.getElementById("dt").style.borderRadius= "20px";
+        document.getElementById("dt1").style.margin= " 0% 2% 4% 11%";
+        document.getElementById("dt1").style.width= "24%";
+        document.getElementById("dt1").style.display= "inline";
+        document.getElementById("dt1").style.float= "left";
+        document.getElementById("dt2").style.margin= " 0% 2% 4% 0%";
+        document.getElementById("dt2").style.width= "26%";
+        document.getElementById("dt2").style.display= "inline";
+        document.getElementById("dt2").style.float= "left";
+        document.getElementById("dt3").style.margin= " 0% 11% 4% 0%";
+        document.getElementById("dt3").style.width= "24%";
+        document.getElementById("dt3").style.display= "inline";
+        document.getElementById("dt3").style.float= "left";
+        document.getElementById("dt4").style.margin= " 0%  2% 2% 20%";
+        document.getElementById("dt4").style.width= "29%";
+        document.getElementById("dt4").style.clear= "both";
+        document.getElementById("dt4").style.display= "inline";
+        document.getElementById("dt4").style.float= "left";
+        document.getElementById("dt5").style.margin= " 0% 20% 2% 0%";
+        document.getElementById("dt5").style.width= "29%";
+        document.getElementById("dt5").style.float= "left";
+    }
+    document.getElementById("p1").addEventListener("mouseout",coll1);
+    document.getElementById("p2").addEventListener("mouseout",coll2);
+    document.getElementById("p3").addEventListener("mouseout",coll3);
+    document.getElementById("p4").addEventListener("mouseout",coll4);
+    document.getElementById("p5").addEventListener("mouseout",coll5);
+    </script>
+    </body>
+</html>
